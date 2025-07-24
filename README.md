@@ -43,13 +43,35 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 ## Project Structure
 
 ```
-/app             - Next.js app router pages
-/components      - UI components
-  /ui            - Shadcn UI components
-/lib             - Utility functions and data
-  /data          - Card prompts and relationship data
-/public          - Static assets
-/styles          - Global CSS
+/app                     - Next.js app router pages
+  /(main)                - Main application routes
+    /play                - Card game interface
+    /timeline            - Relationship timeline
+    /insights            - Compatibility insights
+    /mindfulness         - Meditation exercises
+    /goals              - Relationship goals & challenges
+    /games              - Couple games
+    /journal            - Journal & memories
+    /intimacy           - Intimacy tracker
+    /bucket-list        - Couple bucket list
+    /coaching           - Relationship coaching
+  /(auth)               - Authentication routes
+/components             - UI components
+  /cards                - Card game components
+  /layout               - Layout components
+  /timeline             - Timeline components
+  /mindfulness          - Meditation components
+  /games                - Game components
+  /journal              - Journal components
+  /goals                - Goals & challenges components
+  /ui                   - Shadcn UI components
+/lib                    - Utility functions and data
+  /hooks                - Custom React hooks
+  /types                - TypeScript type definitions
+  /constants            - App constants
+  /data                 - Card prompts and relationship data
+/public                 - Static assets
+/styles                 - Global CSS
 ```
 
 ## Key Components
