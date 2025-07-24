@@ -24,16 +24,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export function Home() {
-  const router = useRouter();
-
-  useEffect(() => {
-    router.push("/play");
-  }, [router]);
-
-  return null;
-}
-
 import { gameData } from "@/lib/data/cards";
 import {
   Heart,
