@@ -1,4 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Amoura - Relationship Connection App
+
+Amoura is an interactive relationship app built with Next.js that helps couples deepen their connection through relationship cards, challenges, and interactive activities.
+
+![Amoura App](https://github.com/ibrahimraimi/amoura/assets/your-github-username/amoura-preview.jpg)
+
+## Features
+
+- **Interactive Card Game**: Explore conversation prompts across different categories (Talk, Deep Dive, Dare, Touch, Wild)
+- **Relationship Timeline**: Document and celebrate special moments together
+- **Couple Games**: Play interactive games designed to strengthen your bond
+- **Mindfulness Exercises**: Connect through shared meditation activities
+- **Compatibility Insights**: Track relationship strengths and growth areas
+- **Journal & Memories**: Document your journey together
+- **Relationship Goals**: Set and achieve goals as a couple
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org) (App Router)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+- [Shadcn UI](https://ui.shadcn.com/) for UI components
+- [Lucide React](https://lucide.dev/) for icons
 
 ## Getting Started
 
@@ -14,23 +36,76 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load custom fonts.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+/app             - Next.js app router pages
+/components      - UI components
+  /ui            - Shadcn UI components
+/lib             - Utility functions and data
+  /data          - Card prompts and relationship data
+/public          - Static assets
+/styles          - Global CSS
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Key Components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Card System
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Users can filter cards by:
 
-## Deploy on Vercel
+- Category (Talk, Deep Dive, Dare, Touch, Wild, Photo)
+- Level (Soft, Medium, Spicy, Explicit)
+- Theme (General, Holiday, Anniversary, Seasonal)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Interactive Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Timer functionality for timed activities
+- Music player for setting the mood
+- Custom card creation
+- Photo challenges
+- Achievement system
+
+## Development
+
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, or bun
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/ibrahimraimi/amoura.git
+cd amoura
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn
+# or
+bun install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+## Deployment
+
+The app can be deployed using Vercel:
+
+```bash
+npm run build
+```
