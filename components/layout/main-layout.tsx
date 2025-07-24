@@ -30,7 +30,6 @@ import {
   Trophy,
   Settings,
 } from "lucide-react";
-import { CoupleNames } from "@/lib/types";
 
 const loveLight = Lovers_Quarrel({
   subsets: ["latin"],
@@ -93,7 +92,7 @@ export default function MainLayout({
   const pathname = usePathname();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [showProfileDialog, setShowProfileDialog] = useState(false);
-  const [coupleNames, setCoupleNames] = useState<CoupleNames>({
+  const [coupleNames, setCoupleNames] = useState({
     partner1: "",
     partner2: "",
   });
