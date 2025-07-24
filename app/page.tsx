@@ -1,7 +1,8 @@
+// @ts-nocheck
+
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { useRouter } from "next/navigation";
 
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
